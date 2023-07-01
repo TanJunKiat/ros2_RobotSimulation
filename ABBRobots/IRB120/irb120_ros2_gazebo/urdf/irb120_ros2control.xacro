@@ -90,8 +90,8 @@
       <!-- irb120_joint1 -->
       <joint name="${prefix}joint_1">
         <command_interface name="position">
-          <param name="min">-2.87979</param>
-          <param name="max">2.87979</param>
+          <param name="min">-7.0</param>
+          <param name="max">7.0</param>
         </command_interface>
         <command_interface name="velocity">
           <param name="min">-4.36332</param>

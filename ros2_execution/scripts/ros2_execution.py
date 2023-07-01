@@ -607,6 +607,7 @@ class RobotPARAM(Node):
                 PARAM_ROBOT == "ur5" or 
                 PARAM_ROBOT == "ur10" or
                 PARAM_ROBOT == "panda" or
+                PARAM_ROBOT == "denso" or
                 PARAM_ROBOT == "iiwa"):
                 None # do nothing.
             else:
@@ -709,6 +710,7 @@ def main(args=None):
         PARAM_ROBOT == "cr35ia" or 
         PARAM_ROBOT == "ur3" or 
         PARAM_ROBOT == "ur5" or 
+        PARAM_ROBOT == "denso" or 
         PARAM_ROBOT == "ur10"):
         MoveJ_CLIENT = MoveJclient()
     elif (PARAM_ROBOT == "panda" or
