@@ -1,0 +1,24 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    denso_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_controller:
+      type: joint_state_controller/JointStateBroadcaster
+
+denso_arm_controller:
+  ros__parameters:
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity
+    joints:
+      - denso_joint1
+      - denso_joint2
+      - denso_joint3
+      - denso_joint4
+      - denso_joint5
+      - denso_joint6
